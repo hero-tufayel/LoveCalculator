@@ -1,0 +1,142 @@
+body{
+    height: 100vh;
+    background-color: #243750;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.love-calculator-container{
+    background-color: #122033;
+    padding: 25px;
+    box-shadow: 1px 0px 13px 6px rgba(255 255 255 / 6%);
+    border-radius: 10px;
+    min-width: 750px;
+    color: white;
+    text-align: center;
+
+}
+.love-calculator{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+input {
+    padding: 15px 10px;
+    border: 2px solid #cb5382;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 18px;
+    transition:all 0.3s ease;
+
+
+
+
+}
+input:focus{
+
+
+    border-color: #cb5382;
+    outline: none;  
+}
+button{
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #cb5382;
+    color: white;
+    cursor: pointer;
+    transition:all 0.3s ease;
+
+}
+button:hover{
+    background-color: #fb93bb;
+    cursor: pointer;
+}
+
+
+
+/* result part */
+.result-container{
+    display: none;
+}
+
+.result-percentage-box-heart{
+   display: flex;
+  
+   align-items: center;
+   justify-content: center;
+    gap: 200px;
+
+
+
+}
+
+.result-name{
+  
+    color: #fb93bb;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+.result-massage{
+    max-width: 400px;
+    margin: auto;
+    font-size: 25px;
+}
+
+.result-percentage-box{
+    background-color: #cb5382;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 38px;
+    font-weight: bold;
+   
+   
+
+
+
+}
+.result-percentage-box-wrapper{
+
+    background-color:red ;
+    height: 180px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 10px;
+     margin-top: 25px;
+}
+.heart-container img {
+    width:auto;
+    max-height: 400px;
+}
+.heart-container{
+    height: 180px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.heart-container{
+    position:relative;
+}
+.heart-container::before {
+    content: "";
+    height: 180px;
+    width: 3px;
+    background-color: #cb5382;
+    position: absolute;
+    left: -60%;
+    top: 0;
+
+
+}
